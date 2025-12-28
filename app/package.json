@@ -1,0 +1,15 @@
+{
+  "name": "ci-cd-minimum-app",
+  "version": "1.0.0",
+  "description": "Minimalna aplikacja Node.js do demonstracji CI/CD (Jenkins + GitLab CI).",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "node -c src/index.js && node -c src/sum.js",
+    "test": "jest --ci",
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "license": "MIT"
+}
